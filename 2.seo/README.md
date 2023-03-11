@@ -47,18 +47,24 @@
 
 Title規範: 2高1低: 高相關性，高搜尋量，低難度
 
+```html
+<meta charset="utf-8">
+<title>title</title>
+<meta name="description" content="description"/>
+```
+
 ***
 ## Step4: 連結 設置
 > url內可以放相關關鍵字
 
 ***
 ## Step5: 元描述(meta) 設置
-rel="canonical"
 
-https://css-tricks.com/essential-meta-tags-social-media/
-https://www.bruceclay.com/blog/how-to-use-social-meta-tags/
-https://www.searchenginejournal.com/important-tags-seo/156440/#close
-https://developers.google.com/search/docs/crawling-indexing/special-tags?hl=zh-tw
+
+
+
+
+
 
 ***
 ## Step6: HTML Element 設置
@@ -72,7 +78,7 @@ https://developers.google.com/search/docs/crawling-indexing/special-tags?hl=zh-t
 ***
 ## Step7: Google結構化資料
 ### 1. [結構化資料](https://developers.google.com/search/docs/appearance/structured-data/search-gallery?hl=zh-tw)設置
-結構化測試[連結](https://search.google.com/test/rich-results?hl=zh-tw)
+結構化測試[連結](https://developers.google.com/search/docs/appearance/structured-data?hl=zh-tw)
 ### 2. [網站連結](https://developers.google.com/search/docs/appearance/sitelinks?hl=zh-tw)優化
 * 需設置網頁標題
 * 重要頁面之間要設置關聯，指向要有關聯性
