@@ -2,15 +2,15 @@
 > google搜尋引擎優化步驟
 
 ## 步驟
-* Step1: [分析](#step1:分析)
-* Step2: [網站規劃](#step2:網站規劃)
-* Step3: [TDK 設置](#step3:TDK設置)
-* Step4: [連結 設置](#step4:連結設置)
-* Step: 元描述(meta) 設置
-* Step6: [HTML Element 設置](#step6:HTMLElement設置)
-* Step7: [Google結構化資料](#step7:Google結構化資料)
-* Step8: [站內優化](#step8:站內優化)
-* Step9: [站外布局](#step9:站外布局)
+* Step1: [分析](#step1-分析)
+* Step2: [網站規劃](#step2-網站規劃)
+* Step3: [TDK 設置](#step3-tdk設置)
+* Step4: [連結 設置](#step4-連結-設置)
+* Step5: [元描述(meta) 設置](#step5-元描述meta-設置)
+* Step6: [HTML Element 設置](#step6-html-element-設置)
+* Step7: [Google結構化資料](#step7-google結構化資料)
+* Step8: [站內優化](#step8-站內優化)
+* Step9: [站外布局](#step9-站外布局)
 
 ***
 ## Step1: 分析
