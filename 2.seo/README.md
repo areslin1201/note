@@ -60,11 +60,7 @@ Title規範: 2高1低: 高相關性，高搜尋量，低難度
 ***
 ## Step5: 元描述(meta) 設置
 
-
-
-
-
-
+參考[連結](https://github.com/areslin1201/note/blob/main/2.seo/README.meta.md)
 
 ***
 ## Step6: HTML Element 設置
