@@ -3,14 +3,14 @@
 > node version v18.12.1
 
 ## 安裝多國語系[next-i18next](https://github.com/i18next/next-i18next)
-1. 安裝指令
+1.安裝指令
 ```
 npm i next-i18next react-i18next i18next
 ```
 
-2. 設置相關資料夾
+2.設置相關資料夾
 
-結構如下...，語系資料夾將影響網址內容(英文語系 => localhost:3001/en)
+結構如下，語系資料夾將影響網址內容(英文語系 => localhost:3001/en)
 ```
 .
 └── public
@@ -21,7 +21,7 @@ npm i next-i18next react-i18next i18next
             └── common.json
 ```
 
-3. 根目錄下新增 next-i18next.config.js
+3.根目錄下新增 next-i18next.config.js
 ```javascript
 module.exports = {
   i18n: {
@@ -30,9 +30,7 @@ module.exports = {
   },
 };
 ```
-4. 編輯 next.config.js
-
-新增以下內容
+4.編輯 next.config.js，新增以下內容
 ```javascript
 const { i18n } = require('./next-i18next.config')
 
@@ -41,9 +39,7 @@ module.exports = {
 }
 ```
 
-5. 添加 I18nextProvider，在 _app.js 調用 i18n
-
-新增以下內容
+5.添加 I18nextProvider，在 _app.js 調用 i18n
 ```javascript
 import { appWithTranslation } from 'next-i18next'
 
@@ -54,9 +50,9 @@ const MyApp = ({ Component, pageProps }) => (
 export default appWithTranslation(MyApp)
 ```
 
-6. 在頁面中調用
+6.在頁面中調用
 
-可以透過 `getStaticProps` 或 `getServerSideProps`
+可以透過 `getStaticProps` 或 `getServerSideProps`獲取
 ```jsx
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 
@@ -71,7 +67,7 @@ export async function getStaticProps({ locale }) {
 }
 ```
 
-7. 實際使用i18n
+7.實際使用i18n
 ```jsx
 import { useTranslation } from 'next-i18next'
 
@@ -92,4 +88,4 @@ http://localhost:3001/
 
 * 英文
 
-* http://localhost:3001/en
+http://localhost:3001/en
