@@ -3,12 +3,13 @@
 > node version v18.12.1
 
 ## 目錄
-* [1.安裝react-bootstrap](#安裝react-bootstrap)
-* [2.新增Layout](#新增layout)
-* [3.安裝多國語系next-i18next](#安裝多國語系next-i18next)
+* 1.[安裝react-bootstrap](#安裝react-bootstrap)
+* 2.[新增Layout](#新增layout)
+* 3.[安裝多國語系next-i18next](#安裝多國語系next-i18next)
+* 4.
 
 ## 安裝[react-bootstrap](https://react-bootstrap.netlify.app/)
-1.安裝指令
+### 1.安裝指令
 ```
 npm install react-bootstrap bootstrap
 ```
@@ -27,7 +28,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 </Link>
 ```
 
-## 新增Layout
+## 新增[Layout](https://nextjs.org/docs/basic-features/layouts)
 1.新增Layout，/src/components/layout/index.js
 ```jsx
 export default function Layout({ children }) {
@@ -158,3 +159,24 @@ return (
   </>
 )
 ```
+
+## 使用[SASS/SCSS](https://nextjs.org/docs/basic-features/built-in-css-support#sass-support)
+1.安裝指令
+```
+npm install --save-dev sass
+```
+
+2.編輯 next.config.js，新增以下內容
+```js
+const path = require('path')
+
+module.exports = {
+  sassOptions: {
+    includePaths: [path.join(__dirname, 'styles')],
+  },
+}
+```
+
+3.頁面調用scss
+
+新增

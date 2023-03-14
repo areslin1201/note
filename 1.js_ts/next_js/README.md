@@ -4,6 +4,7 @@
 * react-bootstrap
 * 新增`Layout`
 * next-i18next
+* SASS/SCSS
 
 ## 2.[通用版本](README.common.md)
 * create-next-app 版本更新問題
