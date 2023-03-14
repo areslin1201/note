@@ -2,6 +2,29 @@
 > 簡單部落格
 > node version v18.12.1
 
+## 新增Layout
+1.新增Layout，/src/components/layout/index.js
+```jsx
+export default function Layout({ children }) {
+  return (
+    <>
+      <main>{children}</main>
+    </>
+  )
+}
+```
+
+2.在`_app.js`中調用
+```jsx
+import Layout from "@/components/layout"
+
+const MyApp = ({ Component, pageProps }) => (
+  <Layout>
+    <Component {...pageProps} />
+  </Layout>
+)
+```
+
 ## 安裝多國語系[next-i18next](https://github.com/i18next/next-i18next)
 1.安裝指令
 ```
@@ -39,7 +62,7 @@ module.exports = {
 }
 ```
 
-5.添加 I18nextProvider，在 _app.js 調用 i18n
+5.添加 I18nextProvider，在`_app.js`調用 i18n
 ```javascript
 import { appWithTranslation } from 'next-i18next'
 
