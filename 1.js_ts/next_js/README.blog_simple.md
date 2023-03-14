@@ -2,7 +2,7 @@
 > 簡單部落格
 > node version v18.12.1
 
-## 安裝react-bootstrap
+## 安裝[react-bootstrap](https://react-bootstrap.netlify.app/)
 1.安裝指令
 ```
 npm install react-bootstrap bootstrap
@@ -132,3 +132,24 @@ http://localhost:3001/
 * 英文
 
 http://localhost:3001/en
+
+9.設置簡易切換按鈕
+
+```jsx
+import { useRouter } from "next/router";
+
+const routerList = [
+  ['zh-TW', '中文'],
+  ['en', '英文']
+];
+
+return (
+  <>
+    {routerList.map((item, index) => (
+      <Link key={index} locale={item[0]} href={{pathname, query}}>
+        {item[1]}
+      </Link>
+    ))}
+  </>
+)
+```
