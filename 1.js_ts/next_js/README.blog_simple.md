@@ -13,6 +13,15 @@ npm install react-bootstrap bootstrap
 import 'bootstrap/dist/css/bootstrap.min.css';
 ```
 
+### react-bootstrap 與 next js 在 `Link` 上遇到的重複錯誤修正
+> 在使用react-bootstrap <Navbar> 裡面的 <Nav.Link> 都會用到href，但next js 有固定跳轉頁面的功能，故不使用<Nav.Link>，採用next的 <Link>
+
+```jsx
+<Link href="/">
+  <Nav.Link as="span">Home</Nav.Link>
+</Link>
+```
+
 ## 新增Layout
 1.新增Layout，/src/components/layout/index.js
 ```jsx
