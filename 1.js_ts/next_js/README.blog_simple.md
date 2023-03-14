@@ -2,6 +2,11 @@
 > 簡單部落格
 > node version v18.12.1
 
+## 目錄
+* [1.安裝react-bootstrap](#安裝react-bootstrap)
+* [2.新增Layout](#新增layout)
+* [3.安裝多國語系next-i18next](#安裝多國語系next-i18next)
+
 ## 安裝[react-bootstrap](https://react-bootstrap.netlify.app/)
 1.安裝指令
 ```
