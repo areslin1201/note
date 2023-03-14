@@ -8,8 +8,8 @@
 * 3.[安裝多國語系next-i18next](#安裝多國語系next-i18next)
 * 4.
 
-## 安裝[react-bootstrap](https://react-bootstrap.netlify.app/)
-### 1.安裝指令
+### 安裝[react-bootstrap](https://react-bootstrap.netlify.app/)
+#### 1.安裝指令
 ```
 npm install react-bootstrap bootstrap
 ```
