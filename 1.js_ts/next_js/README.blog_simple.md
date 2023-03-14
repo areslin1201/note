@@ -2,6 +2,17 @@
 > 簡單部落格
 > node version v18.12.1
 
+## 安裝react-bootstrap
+1.安裝指令
+```
+npm install react-bootstrap bootstrap
+```
+
+2.在`_app.js`中調用CSS
+```jsx
+import 'bootstrap/dist/css/bootstrap.min.css';
+```
+
 ## 新增Layout
 1.新增Layout，/src/components/layout/index.js
 ```jsx
