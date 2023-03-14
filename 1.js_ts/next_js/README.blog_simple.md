@@ -10,7 +10,7 @@
 
 ### 安裝[react-bootstrap](https://react-bootstrap.netlify.app/)
 #### 1.安裝指令
-```
+```shell
 npm install react-bootstrap bootstrap
 ```
 
@@ -53,7 +53,7 @@ const MyApp = ({ Component, pageProps }) => (
 
 ### 安裝多國語系[next-i18next](https://github.com/i18next/next-i18next)
 #### 1.安裝指令
-```
+```shell
 npm i next-i18next react-i18next i18next
 ```
 
@@ -161,7 +161,7 @@ return (
 
 ### 使用[SASS/SCSS](https://nextjs.org/docs/basic-features/built-in-css-support#sass-support)
 #### 1.安裝指令
-```
+```shell
 npm install --save-dev sass
 ```
 

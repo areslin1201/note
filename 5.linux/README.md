@@ -1,5 +1,5 @@
 # Linux筆記
 
-## 1.[Ubuntu](README.ubuntu.md)
+## 1.[Ubuntu常用指令](README.ubuntu.md)
 
-## 2.[Centos](README.centos.md)
+## 2.[Centos常用指令](README.centos.md)
