@@ -12,7 +12,7 @@
 import Image from "next/image";
 ```
 
-### 基本用法
+### 1.基本用法
 必填選項
 * src 
   * 靜態圖片
@@ -41,7 +41,7 @@ import Image from "next/image";
 />
 ```
 
-### 使用佔位符(placeholder)
+### 2.使用佔位符(placeholder)
 使用placeholder[開源項目](https://github.com/joe-bell/plaiceholder)
 
 #### 示例
@@ -75,7 +75,7 @@ export const getStaticProps = async () => {
 }
 ```
 
-### 相依父元件，使用fill
+### 3.相依父元件，使用fill
 父元件須為`position: "relative"`, `position: "fixed"`, 或 `position: "absolute"`
 
 Fill [參考用法](https://nextjs.org/docs/api-reference/next/image#fill)
@@ -92,7 +92,7 @@ Fill [參考用法](https://nextjs.org/docs/api-reference/next/image#fill)
 </div>;
 ```
 
-### Size大小優化
+### 4.Size大小優化
 在fill模式下，不適當的size容易影響性能。詳細資訊[連結](https://nextjs.org/docs/api-reference/next/image#sizes)
 
 演示內容，在小於768px以下，為手機時，我們圖片可能呈現一列(以bootstrap舉例，col-12)，故我們給最大寬為100vw。
@@ -114,7 +114,7 @@ Fill [參考用法](https://nextjs.org/docs/api-reference/next/image#fill)
 </div>;
 ```
 
-### 自適應寬高用法
+### 5.自適應寬高用法
 不同寬度自動調整高度，不依賴父元件
 
 ```jsx
@@ -128,8 +128,9 @@ Fill [參考用法](https://nextjs.org/docs/api-reference/next/image#fill)
 />;
 ```
 
-### 設定為backgroud-image用法
+### 6.設定為backgroud-image用法
 待修正
+https://github.com/vercel/next.js/discussions/18357
 
 ```jsx
 <div style={{
