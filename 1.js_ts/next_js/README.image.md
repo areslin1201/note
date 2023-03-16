@@ -89,7 +89,7 @@ Fill [參考用法](https://nextjs.org/docs/api-reference/next/image#fill)
     objectFit="cover"
     alt="desc"
   />
-</div>;
+</div>
 ```
 
 ### 4.Size大小優化
@@ -111,7 +111,7 @@ Fill [參考用法](https://nextjs.org/docs/api-reference/next/image#fill)
            (max-width: 1200px) 50vw,
            33vw"
   />
-</div>;
+</div>
 ```
 
 ### 5.自適應寬高用法
@@ -125,7 +125,7 @@ Fill [參考用法](https://nextjs.org/docs/api-reference/next/image#fill)
   sizes="100vw"
   alt="1"
   style={{width: '100%', height: 'auto'}}
-/>;
+/>
 ```
 
 ### 6.設定為backgroud-image用法
@@ -152,6 +152,6 @@ https://github.com/vercel/next.js/discussions/18357
       left: "50%"
     }}
   >123</p>
-</div>;
+</div>
 ```
 
