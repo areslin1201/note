@@ -19,6 +19,17 @@ npm install react-bootstrap bootstrap
 import 'bootstrap/dist/css/bootstrap.min.css';
 ```
 
+#### 3.next js 需在`_app.js`引入`SSRProvider`
+```jsx
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+const MyApp = ({Component, pageProps}) => (
+  <SSRProvider>
+    <App/>
+  </SSRProvider>
+);
+```
+
 ### react-bootstrap 與 next js 在 `Link` 上遇到的重複錯誤修正
 > 在使用react-bootstrap <Navbar> 裡面的 <Nav.Link> 都會用到href，但next js 有固定跳轉頁面的功能，故不使用<Nav.Link>，採用next的 <Link>
 
@@ -70,12 +81,15 @@ npm i next-i18next react-i18next i18next
 ```
 
 #### 3.根目錄下新增 next-i18next.config.js
+next js 需加入這段react: { useSuspense: false }
+
 ```javascript
 module.exports = {
   i18n: {
     locales: ['zh-TW', 'en'],
     defaultLocale: 'zh-TW',
   },
+  react: { useSuspense: false }
 };
 ```
 
