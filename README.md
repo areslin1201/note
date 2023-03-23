@@ -2,6 +2,7 @@
 
 補上
 * motion
+* next redux
 * ts
 * docker
 * k8s
