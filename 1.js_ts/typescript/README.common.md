@@ -2,31 +2,40 @@
 
 ### 常見範例
 1. [字串](#1字串)
-2. [interface](#11.interface)
-3. 
+2. [數字](#2數字)
+3. [布林](#3布林)
+4. [null/undefined]()
+5. [任何](#5任何)
+6. [陣列](#6陣列)
+7. [物件](#7物件)
+8. [Enum 枚舉](#8Enum枚舉)
+9. [Union](#9Union)
+10. [type](#10type)
+12. [interface](#11interface)
+13. [function]()
 
 #### 1.字串
 ```ts
 let str: string = 'name'
 ```
-2.數字
+#### 2.數字
 ```ts
 let num: number = 0
 ```
-3.布林
+#### 3.布林
 ```ts
 let boo: boolean = false
 ```
-4.null/undefined
+#### 4.null/undefined
 ```ts
 let n: null = null
 let un: undefined = undefined
 ```
-5.任何
+#### 5.任何
 ```ts
 let test: any = true
 ```
-6.陣列
+#### 6.陣列
 ```ts
 let arr: string[] = ['a', 'b']
 let arr2: string[][] = [ ['a', 'b'], ['c', 'd']]
@@ -35,7 +44,7 @@ let arr2: string[][] = [ ['a', 'b'], ['c', 'd']]
 ```ts
 let tuple: [number, string, boolean] = [1, 'a', true]
 ```
-7.物件
+#### 7.物件
 ```ts
 type Card = {
     name: string
@@ -46,7 +55,7 @@ const obj: Card = {
     desc: "string"
 }
 ```
-8.Enum 枚舉
+#### 8.Enum 枚舉
 ```ts
 enum LiveStatus {
     SUCCESS = 0,
@@ -56,17 +65,18 @@ enum LiveStatus {
 
 const status = LiveStatus.SUCCESS
 ```
-9.Union
+#### 9.Union
 ```ts
 let aaa: number | string;
 ```
-10.type `定義一個type類型供其他參數使用`
+#### 10.type
+`定義一個type類型供其他參數使用`
 ```ts
 type A = number | string
 
 let a1: A = 123
 ```
-11.interface
+#### 11.interface
 `與obj不同的地方在於，interface可以擴充`
 ```ts
 interface User {
@@ -90,3 +100,4 @@ const obj: Card = {
     age: 20
 }
 ```
+#### 12.function
