@@ -21,7 +21,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 #### 3.next js 需在`_app.js`引入`SSRProvider`
 ```jsx
-import 'bootstrap/dist/css/bootstrap.min.css';
+import SSRProvider from 'react-bootstrap/SSRProvider';
 
 const MyApp = ({Component, pageProps}) => (
   <SSRProvider>

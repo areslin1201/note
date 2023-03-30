@@ -33,3 +33,7 @@ docker container stop <CONTAINER ID>
 ```shell
 docker container restart <CONTAINER ID>
 ```
+### 刪除container
+```shell
+docker container rm <CONTAINER ID>
+```

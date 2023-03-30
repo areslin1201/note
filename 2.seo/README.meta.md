@@ -6,7 +6,7 @@
 基礎用法
 ```html
 <meta property="og:title" content="keyword" />
-<meta property="og:description" content="keyword">
+<meta property="og:description" content="keyword" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://domain.com" />
 <meta property="og:image" content="https://domain.com" />

@@ -1,0 +1,14 @@
+docker
+compose
+https://ithelp.ithome.com.tw/articles/10217361
+
+
+next 13 + i18n 新用法
+https://locize.com/blog/next-13-app-dir-i18n/
+
+react websocket
+https://medium.com/enjoy-life-enjoy-coding/react-%E5%9C%A8-react-%E4%B8%AD%E4%BD%BF%E7%94%A8-websocket-feat-socket-io-%E5%9F%BA%E6%9C%AC%E6%95%99%E5%AD%B8-2e3483ad5c80
+
+
+SEO meta檢查
+### [待檢查](https://blog.darkthread.net/blog/open-graph-tags/)
