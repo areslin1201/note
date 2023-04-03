@@ -4,15 +4,15 @@
 1. [字串](#1字串)
 2. [數字](#2數字)
 3. [布林](#3布林)
-4. [null/undefined]()
+4. [null/undefined](#4nullundefined)
 5. [任何](#5任何)
 6. [陣列](#6陣列)
 7. [物件](#7物件)
-8. [Enum 枚舉](#8Enum枚舉)
+8. [Enum 枚舉](#8enum-枚舉)
 9. [Union](#9Union)
 10. [type](#10type)
 12. [interface](#11interface)
-13. [function]()
+13. [function](#12function)
 
 #### 1.字串
 ```ts
@@ -47,7 +47,7 @@ let tuple: [number, string, boolean] = [1, 'a', true]
 #### 7.物件
 ```ts
 type Card = {
-    name: string
+    name: string,
     desc: string
 }
 const obj: Card = {
@@ -101,3 +101,40 @@ const obj: Card = {
 }
 ```
 #### 12.function
+```ts
+function hello (a: string, b: string) {
+    return a + b
+}
+
+function hello2 (a: string, b: string): number {
+    return 999
+}
+
+function hello3 (name?: string) { //可選，但?undefined
+    if (name === undefined) return -1 //如果是undefined就不執行
+    
+    return
+}
+```
+#### 13.unknown
+`前端並不確定他會是什麼類型`
+```ts
+type Date = {
+    userId: number,
+    id: number,
+    title: string,
+    completed: boolean
+}
+
+async function getData() {
+    const res = await fetch(url)
+    const data = await res.json() as Data
+}
+
+// 假設data是動態的
+const beta = data as unknown as Data
+```
+
+
+
+1:18:52
