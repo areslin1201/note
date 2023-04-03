@@ -317,5 +317,160 @@ const todo: TodoPreview = {
 todo;
 ```
 
+const live = new Live('num01', '001', 'peter')
+// live.id， live.name 無法被使用
+```
+
+繼承
+
+```ts
+class CarLive extends Live {
+    constructor(roomName1: string, id1: string, name1: string) { //把Live的填過來
+        super(roomName1, id1, name1);
+    }
+    
+    start() {
+        // super.name 可以被訪問
+        // super.id 訪問不到
+    }
+}
+
+const carLive = new CarLive('num02', '002', 'peter2')
+// carLive.id， carLive.name 無法被使用
+```
+
+JS原有私有變數寫法
+
+```ts
+class Live2 {
+    //私有變數
+    #name
+    constructor(name: string) {
+        this.#name = name
+    }
+}
+
+const live2 = new Live2('live2')
+// live2.name 無法使用
+```
+
+class 結合 interface
+
+```ts
+interface CarProps {
+    name: string
+    age: number
+}
+
+class Car implements Carprops {
+    nams: string
+    age: number
+
+    constructor(name: string, age: number) {
+        this.name = name
+        this.age = age
+    }
+}
+```
+
+#### 15.泛型
+T 為自定義名稱，data為自定義T的類型，`<>`泛型基本寫法
+
+```ts
+function print<T> (data: T) {
+    console.log(data)
+}
+
+print<number>(999) //只接受數字類型
+print<string>("test") //只接受數字串類型
+```
+
+class用法
+
+```ts
+class Print<T> {
+    data: T
+
+    constructor(d: T) {
+        this.data = d
+    }
+}
+
+const p = new Pirnt<number>(999)
+```
+
+#### 16.record(utility)
+映射Type
+
+官方[範例](https://www.typescriptlang.org/docs/handbook/utility-types.html#recordkeys-type)
+
+```ts
+interface CatInfo {
+    age: number;
+    breed: string;
+}
+
+type CatName = "miffy" | "boris" | "mordred"
+
+const cats: Record<CatName, CatInfo> = {
+    miffy: { age: 10, breed: 'string' },
+    boris: { age: 10, breed: 'string' },
+    mordred: { age: 10, breed: 'string' },
+    mordred2: { age: 10, breed: 'string' } //將無法運行該行
+}
+
+const obj1: Record<string, boolean> = {
+    name: true,
+    // age: 123 error
+}
+```
+
+#### 17.pick
+選取interface特定內容
+
+官方[範例](https://www.typescriptlang.org/docs/handbook/utility-types.html#picktype-keys)
+
+```ts
+interface Todo {
+    title: string;
+    description: string;
+    completed: boolean;
+}
+
+type TodoPreview = pick<Todo, "title" | "completed">
+
+const todo: TodoPreview = {
+    title: "room",
+    completed: false,
+    // 添加其他新的會報錯
+}
+todo; 
+```
+
+#### 18.omit
+與Pick相反，移除interface特定內容
+
+官方[範例](https://www.typescriptlang.org/docs/handbook/utility-types.html#omittype-keys)
+
+```ts
+interface Todo {
+  title: string;
+  description: string;
+  completed: boolean;
+  createdAt: number;
+}
+ 
+type TodoPreview = Omit<Todo, "description">;
+ 
+const todo: TodoPreview = {
+  title: "Clean room",
+  completed: false,
+  createdAt: 1615544252770,
+    // 添加completed會報錯
+};
+ 
+todo;
+```
+
 #### 相關連結
 * [learn](https://www.youtube.com/watch?v=GinkGJZBHIY&t=1s&ab_channel=%E5%B8%83%E9%AD%AF%E6%96%AF%E5%89%8D%E7%AB%AF)
