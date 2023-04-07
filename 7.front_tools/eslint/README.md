@@ -1,11 +1,13 @@
 # Eslint 筆記
 
+## 參考.eslintrc.js[連結](https://github.com/areslin1201/note/blob/main/7.front_tools/eslint/.eslintrc.js)
+
 ## 目錄
-1. [安裝Eslint](#1.安裝)
-2. [初始化Eslint](#2.初始化)
-3. [執行](#3.添加執行命令)
-4. [外掛安裝-hook](#5.react-hook外掛安裝)
-5. [獨立檔案設定](#6.檔案內設定)
+1. [安裝Eslint](#1安裝)
+2. [初始化Eslint](#2初始化)
+3. [執行](#3添加執行命令)
+4. [外掛安裝-hook](#5react-hook外掛安裝)
+5. [獨立檔案設定](#6檔案內設定)
 
 ### 1.安裝
 ```shell
@@ -57,7 +59,7 @@ npm install eslint-plugin-react-hooks --save-dev
 
 添加至`.eslintrc.js`
 
-```json
+```
 extends: [
   'plugin:react/recommended',
   'airbnb',
