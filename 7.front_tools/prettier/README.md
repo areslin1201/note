@@ -1,6 +1,6 @@
 # Prettier 筆記
 
-## 參考.eslintrc.js[連結]()
+## 參考.prettierrc.js[連結](https://github.com/areslin1201/note/blob/main/7.front_tools/prettier/.prettierrc.js)
 
 ## 目錄
 1. [安裝](#1安裝)
