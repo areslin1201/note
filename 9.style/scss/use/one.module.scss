@@ -1,0 +1,45 @@
+//1
+p {
+  font-size: 24px;
+}
+
+//2
+$bigSize: 42px;
+@mixin customFontStyle {
+  text-decoration: underline;
+}
+
+//3
+$-privateColor: #f44336;
+@mixin privateStyle {
+  color: $-privateColor;
+}
+
+//4
+$black: #000 !default;
+.change-dark-p {
+  color: $black;
+}
+
+//5
+$-width: 10px;
+$-height: 10px;
+$-color: gray;
+
+@mixin configure($width: null, $height: null, $color: null) {
+  @if $width {
+    $-width: $width !global;
+  }
+  @if $height {
+    $-height: $height !global;
+  }
+  @if $color {
+    $-color: $color !global;
+  }
+}
+
+@mixin createBox {
+  width: $-width;
+  height: $-height;
+  background-color: $-color;
+}
