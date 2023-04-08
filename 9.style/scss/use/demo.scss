@@ -1,0 +1,38 @@
+// 4.直接更換外部引入的scss，內部的參數內容
+// 要寫在最上面，暫時隱藏，與下面@use衝突
+//@use './forScss/one.module' with (
+//  $black: #222
+//);
+
+@use './forScss/one.module' as one;
+
+// 1. 所有p都會改變
+
+.my-font-style {
+  // 2.使用外部@mixin
+  @include one.customFontStyle;
+  // 2.使用外部參數
+  font-size: one.$bigSize;
+}
+
+.private-use-1 {
+  @include one.privateStyle
+}
+.private-use-2 {
+  // 3.private 私有參數不可外部調用
+  //color: one.$-privateColor
+}
+
+.newDivBox {
+  //5-1.@mixin createBox 組成預設box大小及艷色
+  @include one.createBox;
+}
+.newDivBox2 {
+  //5-2.configure傳遞參數到one scss裡面，configure判斷有值就更改內部參數
+  @include one.configure(
+          $width: 20px,
+          $height: 20px,
+          $color: yellow
+  );
+  @include one.createBox;
+}

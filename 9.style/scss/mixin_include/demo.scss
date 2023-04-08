@@ -1,0 +1,55 @@
+@use './forScss/one.module' as one;
+
+$demoImg: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkgv4V3gCvpsXLHsXx6LC2ruTtCLZ0XGbymf1IKBqUIg&s";
+
+.my-font-block {
+  //1.自定義 變數名稱/變數值
+  @include one.twoColorBlock(background-color, gray, #222);
+}
+
+.arguments-img {
+  //2.統一 變數名稱 ，background-image、background-repeat ...
+  @include one.replace-text(url($demoImg), 0);
+}
+
+.avatar {
+  //3.增加 @if判斷式
+  @include one.square(100px, $radius: 10px);
+}
+
+//4.不同p 帶不同class，後面可以無限新增
+@include one.fontStyle(20px, "p.styleOne", "p.styleTwo", "p.styleThree");
+
+//5.List & Map (array / object)
+$sizes: 40, 50, 80;
+@each $size in $sizes {
+  .icon-#{$size} {
+    font-size: #{$size}px;
+    height: #{$size}px;
+    width: #{$size}px;
+  };
+};
+
+$icons: ("type01": red, "type02": blue, "type03": gray);
+@each $name, $color in $icons {
+  .icon-#{$name} {
+    color: $color;
+  }
+}
+
+//6. .button + .button:not([disabled]):hover + .button:hover 相依
+@mixin hover {
+  &:not([disabled]):hover {
+    @content;
+  }
+  &:hover {
+    border-color: red;
+  }
+}
+
+.button {
+  border: 1px solid black;
+  @include hover {
+    border-width: 2px;
+  }
+}
