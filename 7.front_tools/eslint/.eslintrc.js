@@ -48,5 +48,7 @@ module.exports = {
     // "avoidEscape": true 允許雙引號or單引號 (ex: var single = 'a string containing "double" quotes')
     // "allowTemplateLiterals": true 允許使用反勾號 (ex: var double = `double`)
     quotes: ['error', 'single', { allowTemplateLiterals: true }],
+    // redux-toolkit State無法直接修改問題修正
+    'no-param-reassign': ['error', { 'props': false }],
   },
 }

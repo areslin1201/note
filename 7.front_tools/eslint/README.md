@@ -16,7 +16,7 @@ npm install eslint
 
 ### 2.初始化
 ```shell
-eslint --niit
+eslint --init
 ```
 
 常見問題選擇
