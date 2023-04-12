@@ -107,7 +107,14 @@ const obj: Card = {
 }
 ```
 #### 12.function
+
+不返回值，添加`void` type
+
 ```ts
+function no (): void {
+  console.log('no return')
+}
+
 function hello (a: string, b: string) {
     return a + b
 }
