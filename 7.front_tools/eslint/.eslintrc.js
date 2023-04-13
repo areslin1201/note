@@ -52,5 +52,7 @@ module.exports = {
     'react/function-component-definition': [2, { namedComponents: 'arrow-function' }],
     // 可否允許標籤帶 ...props內容 <p {...props} ></p>
     'react/jsx-props-no-spreading': 'off',
+    // redux-toolkit State無法直接修改問題修正
+    'no-param-reassign': ['error', { 'props': false }],
   },
 }
