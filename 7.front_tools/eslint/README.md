@@ -11,12 +11,12 @@
 
 ### 1.安裝
 ```shell
-npm install eslint
+npm install eslint --save-dev
 ```
 
 ### 2.初始化
 ```shell
-eslint --niit
+eslint --init
 ```
 
 常見問題選擇
@@ -95,4 +95,20 @@ console.log('bar');
 需安裝
 ```shell
 npm i eslint-plugin-simple-import-sort
+```
+
+### 8.jsconfig alias paths 無法映射問題
+```shell
+npm install eslint-import-resolver-jsconfig --save-dev
+```
+
+添加至.eslintrc.js
+```js
+settings: {
+  'import/resolver': {
+    jsconfig: {
+      config: 'jsconfig.json'
+    }
+  }
+}
 ```

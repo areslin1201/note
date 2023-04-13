@@ -48,5 +48,9 @@ module.exports = {
     // "avoidEscape": true 允許雙引號or單引號 (ex: var single = 'a string containing "double" quotes')
     // "allowTemplateLiterals": true 允許使用反勾號 (ex: var double = `double`)
     quotes: ['error', 'single', { allowTemplateLiterals: true }],
+    // JSX 函式都用箭頭函式表示
+    'react/function-component-definition': [2, { namedComponents: 'arrow-function' }],
+    // 可否允許標籤帶 ...props內容 <p {...props} ></p>
+    'react/jsx-props-no-spreading': 'off',
   },
 }

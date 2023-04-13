@@ -9,3 +9,4 @@
    2. 規則-[中文連結](https://eslint.bootcss.com/docs/rules)
 2. [Prettier](https://github.com/areslin1201/note/tree/main/7.front_tools/prettier)
    1. rules-[官方](https://prettier.io/docs/en/options.html#bracket-line)
+3. [Eslint 結合 Prettier](README.eslint-prettier.md)
