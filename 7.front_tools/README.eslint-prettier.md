@@ -1,22 +1,22 @@
 # Eslint 結合 Prettier 筆記
 
-### 安裝
+### 1.安裝
 ```shell
 npm install eslint eslint-config-prettier eslint-plugin-prettier eslint-import-resolver-jsconfig eslint-plugin-react-hooks --save-dev
 npm install --save-dev --save-exact prettier
 ```
 
-### 初始化
+### 2.初始化
 ```shell
 eslint --init
 ```
 
-### 新增文件
+### 3.新增文件
 ```shell
 touch .prettierrc.js .prettierignore .eslintignore
 ```
 
-### 新增以下內容
+### 4.新增以下內容
 `.eslintrc.js`
 ```js
 module.exports = {
@@ -25,11 +25,11 @@ module.exports = {
     es2021: true,
   },
   extends: [
+    'airbnb-base',  // 基於airbnb
+    'prettier',
     'plugin:react/recommended',
-    'airbnb',
     'plugin:react-hooks/recommended',
     'plugin:prettier/recommended',
-    'prettier',
   ],
   overrides: [],
   parserOptions: {
@@ -76,7 +76,7 @@ module.exports = {
 }
 ```
 
-### 兩個ignore都加上
+### 5.兩個ignore都加上
 ```
 node_modules
 package.lock.json
@@ -84,7 +84,7 @@ dist
 build
 ```
 
-### 添加執行命令
+### 6.添加執行命令
 ```json
 "scripts": {
   "lint": "next lint", // by next js
@@ -94,3 +94,8 @@ build
 }
 ```
 
+### 7.執行優化
+```shell
+npm run format
+npm run lint
+```
