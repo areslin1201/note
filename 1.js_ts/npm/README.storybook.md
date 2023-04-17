@@ -409,6 +409,8 @@ npm login
 npm publish --access public
 ```
 
+### 檢視完整代碼[連結](https://github.com/areslin1201/npm-publish-simple)
+
 ### 參考連結
 * [教學](https://medium.com/soulweb-academy/easily-build-and-publish-a-react-typescript-component-library-package-to-npm-using-storybook-and-4836d4f700b6)
 * [storybook](https://storybook.js.org/docs/react/get-started/install/)
