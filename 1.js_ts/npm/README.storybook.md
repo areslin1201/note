@@ -266,7 +266,7 @@ npm run storybook
 ### 增加peer dependencies
 `peer dependencies`避免套件被重複下載
 
-```json
+```shell
 {  
     ...
     "peerDependencies": {
@@ -288,7 +288,7 @@ npm run storybook
 ### 設置Rollup打包套件
 
 修改tsconfig.json
-```json
+```shell
 {
   "compilerOptions": {
     "outDir": "dist", // 添加
