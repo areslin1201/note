@@ -3,6 +3,8 @@
 ## 環境
 使用`node` + `typescript` + `create-react-app` + `storybook`
 
+參考npm[連結](https://www.npmjs.com/package/ares-publish-npm-example)
+
 ### 安裝react框架
 ```shell
 npx create-react-app my-app --template typescript
