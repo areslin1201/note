@@ -2,6 +2,7 @@
 
 ## Facebook
 >by [Open Graph](https://ogp.me/)
+>注意fb:app_id
 
 基礎用法
 ```html
@@ -21,11 +22,11 @@
 
 基礎用法
 ```html
-<meta name="twitter:title" content="keyword">
-<meta name="twitter:description" content="keyword">
-<meta name="twitter:image" content="https://domain.com">
-<meta name="twitter:url" content="https://domain.com">
-<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="keyword" />
+<meta name="twitter:description" content="keyword" />
+<meta name="twitter:image" content="https://domain.com" />
+<meta name="twitter:url" content="https://domain.com" />
+<meta name="twitter:card" content="summary_large_image" />
 ```
 
 * twitter:card[參考](https://developer.twitter.com/en/docs/twitter-for-websites/cards/guides/getting-started): summary, summary_large_image, app, player
@@ -35,10 +36,10 @@
 ## LinkedIn / Pinterest
 
 ```html
-<html itemscope itemtype="https://schema.org/Article">
-<meta itemprop="name" content="title">
-<meta itemprop="description" content="description">
-<meta itemprop="image" content="https://domain.com">
+<html itemscope itemtype="https://schema.org/Article" />
+<meta itemprop="name" content="title" />
+<meta itemprop="description" content="description" />
+<meta itemprop="image" content="https://domain.com" />
 ```
 
 ### Google相關設置[連結](https://developers.google.com/search/docs/crawling-indexing/special-tags?hl=zh-tw)
