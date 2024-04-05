@@ -1,0 +1,5 @@
+install python by brew
+
+brew install python
+python3 --version
+pip3 --version
