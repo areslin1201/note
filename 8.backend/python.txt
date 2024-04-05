@@ -1,5 +1,14 @@
-install python by brew
-
+# install python by brew
 brew install python
 python3 --version
 pip3 --version
+
+# 建構虛擬環境
+python3 -m venv {路徑/專案名稱Demo...}
+source Demo/bin/activate
+
+# 安裝所需套件
+pip install scrapy
+
+# 建立一個爬蟲專案
+scrapy startproject myproject
