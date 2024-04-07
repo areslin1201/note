@@ -1,0 +1,24 @@
+參考https://medium.com/soulweb-academy/easily-build-and-publish-a-react-typescript-component-library-package-to-npm-using-storybook-and-4836d4f700b6
+
+1.設置 storybook
+
+npx create-react-app storybook-date --template typescript
+cd storybook-date
+npx storybook@latest init
+
+2.移除預設 stroybook
+rm -rf src/stories/*
+mkdir src/components
+
+3.設置依賴項
+dependencies 的內容都要搬到 devDependencies
+rm -rf package-lock.json
+npm install
+
+4.建立一個組件
+***待開發***
+
+5.執行storybook查看
+npm run storybook
+
+6.設置對等依賴項，讓客戶可以用到我們的庫
