@@ -16,12 +16,20 @@
 1. entry/src/main/resources/base/media，更改background.png、foreground.png
    1. background.png 為背景圖（建議尺寸288*288）
    2. foreground.png 會蓋在背景圖上方（建議尺寸288*288）
+### APP 啟動過渡圖
+1. ./produces/default/src/main/module.json5
+   1. 修改startWindowIcon value
 
 ## 三層架構
 官方[範例](https://developer.huawei.com/consumer/cn/codelabsPortal/carddetails/tutorials_Next-BasicArchitectureDesignPart2)
 1. commons：（公共能力層）：用於存放公共基礎能力集合（如工具庫、公共配置等）。 commons層可編譯成一個或多個HAR包或HSP包，只可以被products和features依賴，不可以反向依賴。
 2. features：用於存放基礎特性集合（如應用中相對獨立的各個功能的UI及業務邏輯實作等）。各feature高內聚、低耦合、可客製化，供產品靈活部署。不需要單獨部署的feature通常編譯為HAR套件或HSP套件，供products或其它feature使用。需要單獨部署的feature通常編譯為Feature類型的HAP包，和products下Entry類型的HAP包進行組合部署。 features層可以橫向調用及依賴common層，同時可以被products層不同裝置形態的HAP所依賴，但不能反向依賴products層。
 3. products：（產品客製化層）：用於針對不同設備形態進行功能和特性整合。 products層各子目錄各自編譯為一個Entry類型的HAP包，作為應用主入口。 products層不可以橫向調用。
+
+### 注意事項
+添加 module > commons, features 
+1. 注意 module 底下 oh-package.json 裡面的 name 要跟 dependencies name 一樣
+2. 跟目錄底下 build-profile.json modules 要新增 module 資訊
 
 ### 更新
 1. 建立新內容 
